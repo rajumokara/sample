@@ -1,0 +1,30 @@
+/* Define a keyframe animation */
+@keyframes moveFromTopToBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-45px);
+  }
+
+  50% {
+    transform: translateY(45px);
+  }
+
+  100% {
+    transform: translateY(-45px);
+  }
+}
+
+.animationSec {
+  animation: moveFromTopToBottom 2s ease;
+}
+.animationImg {
+  animation: upDown 3s infinite;
+}
